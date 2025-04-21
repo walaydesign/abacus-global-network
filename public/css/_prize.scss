@@ -1,0 +1,118 @@
+.prize {
+    &_list {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        // .select {
+        //     position: absolute;
+        //     top: 0;
+        //     right: 0;
+        // }
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            color: $primary-2;
+            margin-bottom: 20px;
+        }
+        &_item {
+            display: flex;
+            margin-bottom: 5px;
+            gap: 4px;
+            p {
+                margin: 0;
+            }
+        }
+        &_title {
+            width: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $primary;
+            color: $white;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 10px;
+        }
+        &_content {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            width: calc(100% - 120px - 4px);
+            background-color: $gray-100;
+        }
+        &_name {
+            width: calc(100% - 150px);
+            padding-right: 15px;
+            margin: 0;
+        }
+        &_score {
+            width: 150px;
+            position: relative;
+            padding-left: 15px;
+            margin: 0;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 20px;
+                background-color: $gray-300;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &_info {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        // margin-bottom: 20px;
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            img {
+                width: 20px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &_list {
+            &_item {
+                flex-direction: column;
+                margin-bottom: 20px;
+            }
+            &_title {
+                width: 100%;
+            }
+            &_content {
+                width: 100%;
+                justify-content: space-between;
+                padding: 15px;
+                p {
+                    font-size: 14px;
+                }
+            }
+            &_score {
+                padding: 0;
+                width: auto;
+                &::before {
+                    display: none;
+                }
+            }
+            &_name {
+                width: auto;
+            }
+            .select {
+                width: 100%;
+            }
+        }
+        &_info {
+            // margin-bottom: 15px;
+        }
+    }
+}

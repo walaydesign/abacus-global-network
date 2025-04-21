@@ -1,0 +1,147 @@
+.inner-page-exam {
+    .wood {
+        &-title {
+            margin: 0;
+            width: fit-content;
+            padding: 8px 20px;
+            &-wrap {
+
+            }
+        }
+    }
+}
+
+.exam-table {
+    width: 100%;
+    td, th {
+        padding: 2px;
+    }
+    &-date {
+        min-width: 450px;
+        td, th {
+            width: 25%;
+        }
+        .exam-table {
+            &_th, &_td {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+    &-content {
+        th {
+            height: 1px;
+            width: 120px;
+        }
+        td {
+            height: 100%;
+            width: calc(100% - 120px);
+        }
+        .exam-table {
+            &_th, &_td {
+                height: 100%;
+            }
+            &_th {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            &_td {
+                padding: 15px 20px;
+                line-height: 1.7;
+            }
+        }
+    }
+    &_th {
+        background-color: $primary;
+        color: $white;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px;
+    }
+    &_td {
+        background-color: $gray-100;
+    }
+    @media screen and (max-width: 575px) {
+        &_th, &_td {
+            font-size: 14px;
+        }
+        &-content {
+            display: block;
+            th, td, tr {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            tr {
+                margin-bottom: 20px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.exam-content {
+    margin-bottom: 40px;
+}
+
+.exam-date {
+    .wood-wrap_wrapper {
+        overflow-x: auto;
+    }
+}
+
+.exam_feature {
+    &-wrap {
+        margin-bottom: 200px;
+    }
+    &_item {
+        padding: 16px 0;
+        border-bottom: 1px solid $gray-200;
+        h3 {
+            padding: 7px 16px;
+            background-color: $primary;
+            width: fit-content;
+            margin-bottom: 10px;
+            color: $white;
+            font-size: 16px;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+        p {
+            margin: 0;
+            a {
+                color: $link;
+                &:hover {
+                    color: $primary-2;
+                }
+            }
+        }
+        &:first-child {
+            padding-top: 0;
+        }
+        &:last-child {
+            border: 0;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_item {
+            p {
+                font-size: 14px;
+            }
+        }
+        &-wrap {
+            margin-bottom: 100px;
+            .wood-wrap_wrapper {
+                padding: 15px;
+            }
+        }
+    }
+}

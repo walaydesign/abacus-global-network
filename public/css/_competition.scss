@@ -1,0 +1,19 @@
+.list-competition {
+    .list-common {
+        &_item {
+            &:hover {
+                .list-common {
+                    &_title, &_content {
+                        color: $secondary-2;
+                    }
+                    &_date {
+                        p {
+                            color: $secondary-2;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
