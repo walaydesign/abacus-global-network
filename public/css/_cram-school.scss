@@ -1,0 +1,182 @@
+.cram-school {
+    margin-bottom: 130px;
+    &_list {
+        margin-bottom: 60px;
+    }
+    &_item {
+        display: flex;
+        margin-bottom: 40px;
+        align-items: flex-start;
+    }
+    &_pic {
+        width: 30%;
+        position: relative;
+        padding-bottom: calc(30% * 0.7);
+        box-shadow: $shadow-card;
+        >img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
+    }
+    &_text {
+        width: 70%;
+        padding-left: 30px;
+        padding-top: 20px;
+        h2 {
+            margin-bottom: 20px;
+            color: $primary-2;
+            font-size: 24px;
+            font-weight: 500;
+        }
+    }
+    &_branch {
+        >li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &_name {
+        padding-left: 13px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        h3 {
+            font-size: 14px;
+            font-weight: 700;
+            margin: 0;
+            padding-right: 8px;
+        }
+        p {
+            font-size: 14px;
+            margin: 0;
+            padding-left: 8px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 18px;
+                background-color: $gray-200;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: $primary;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+    &_phone {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &_icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background-color: $primary;
+            width: 20px;
+            height: 20px;
+            img {
+                width: 12px;
+            }
+        }
+        ul {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            li {
+                a {
+                    font-size: 14px;
+                    color: $gray-700;
+                    text-decoration: underline;
+                    position: relative;
+                    display: block;
+                    padding-left: 15px;
+                    transition: $transition;
+                    &::before {
+                        position: absolute;
+                        content: "、";
+                        top: 50%;
+                        left: 0;
+                        width: 15px;
+                        text-align: center;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                    &:hover {
+                        color: $primary-2;
+                    }
+                }
+                &:first-child {
+                    a {
+                        padding: 0;
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+        &_item {
+            display: block;
+        }
+        &_pic {
+            width: 100%;
+            padding-bottom: 70%;
+        }
+        &_text {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+    @media screen and (max-width: 575px) {
+        &_branch {
+            >li {
+                display: block;
+                margin-bottom: 15px;
+            }
+        }
+        &_phone {
+            padding-left: 13px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.city-select {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    select {
+        appearance: none;
+        padding: 8px 45px 8px 15px;
+        border-radius: 100px;
+        border: 1px solid $gray-200;
+        background-image: url(../img/chevron-down.svg);
+        background-size: 16px;
+        background-position: calc(100% - 15px) center;
+        background-repeat: no-repeat;
+    }
+}

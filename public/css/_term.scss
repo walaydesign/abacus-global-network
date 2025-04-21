@@ -1,0 +1,18 @@
+.term {
+    margin-bottom: 130px;
+    .container {
+        max-width: 840px;
+    }
+    .btn-download {
+        margin-bottom: 30px;
+    }
+    iframe {
+        width: 100%;
+        height: 600px;
+    }
+    @media screen and (max-width: 575px) {
+        iframe {
+            height: 400px;
+        }
+    }
+}

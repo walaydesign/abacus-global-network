@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <title>珠算全球資訊網</title>
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
@@ -37,19 +37,19 @@
                 </form>
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="./about.html">
                             <img src="./public/img/nav-about.svg" alt="">
                             <span>關於我們</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./exam.html">
                             <img src="./public/img/nav-exam.svg" alt="">
                             <span>珠心算數學檢定</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./competition.html">
                             <img src="./public/img/nav-global.svg" alt="">
                             <span>全國珠算比賽</span>
                         </a>
@@ -67,13 +67,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./event.html">
                             <img src="./public/img/nav-event.svg" alt="">
                             <span>活動快訊</span>
                         </a>
                     </li>
                     <li>
-                        <a href="">
+                        <a href="./link.html">
                             <img src="./public/img/nav-link.svg" alt="">
                             <span>珠算連結</span>
                         </a>
@@ -92,7 +92,7 @@
 
         <div class="container">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">首頁</a></li>
+              <li class="breadcrumb-item"><a href="./index.html">首頁</a></li>
               <li class="breadcrumb-item active" aria-current="page">珠心算及數學檢定合格名單查詢</li>
             </ol>
         </div>
@@ -115,35 +115,35 @@
                 </ul>
                 <div class="tab-content" id="searchTabContent">
                     <div class="tab-pane fade show active" id="national-tab-pane" role="tabpanel" aria-labelledby="national-tab" tabindex="0">
-                        <div class="row">
+                        <div class="search_wrapper row">
                             <div class="col-lg-6">
                                 <div class="search_main">
                                     <p>
                                         珠心算及數學檢定合格名單查詢，查詢個人歷年來的比賽合格資訊，為確保個人資料安全，請輸入正確姓名以及生日方可進行查詢動作。
                                     </p>
                                     <div class="search_form">
-                                        <div>
+                                        <div class="search_form_item">
                                             <label for="">* 姓名</label>
-                                            <input type="text">
+                                            <input type="text" required>
                                         </div>
-                                        <div>
+                                        <div class="search_form_item">
                                             <label for="">生日 (年-月-日)</label>
                                             <div class="row">
-                                                <div class="col-4">
+                                                <div class="col-lg-4">
                                                     <select name="" id="" class="select">
                                                         <option value="">1965</option>
                                                         <option value="">1966</option>
                                                         <option value="">1967</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-lg-4">
                                                     <select name="" id="" class="select">
                                                         <option value="">4</option>
                                                         <option value="">5</option>
                                                         <option value="">6</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-4">
+                                                <div class="col-lg-4">
                                                     <select name="" id="" class="select">
                                                         <option value="">19</option>
                                                         <option value="">20</option>
@@ -170,12 +170,73 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                
+                                <img src="./public/img/result.png" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="foreign-tab-pane" role="tabpanel" aria-labelledby="foreign-tab" tabindex="0">
-
+                        <div class="search_wrapper row">
+                            <div class="col-lg-6">
+                                <div class="search_main">
+                                    <p>
+                                        Enquiry for personal qualified information of passing Abacus, Mental Arithmetic and Mathematics tests over the years. In order to ensure that personal data security, please enter the correct name and date of birth before query action.
+                                    </p>
+                                    <div class="search_form">
+                                        <div class="search_form_item">
+                                            <label for="">* Name</label>
+                                            <input type="text" required>
+                                        </div>
+                                        <div class="search_form_item">
+                                            <label for="">Identity</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="search_form_item">
+                                            <label for="">Birthday(Year-Month-Day)</label>
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <select name="" id="" class="select">
+                                                        <option value="">1965</option>
+                                                        <option value="">1966</option>
+                                                        <option value="">1967</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <select name="" id="" class="select">
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                        <option value="">6</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <select name="" id="" class="select">
+                                                        <option value="">19</option>
+                                                        <option value="">20</option>
+                                                        <option value="">21</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button>
+                                            <img src="./public/img/search2.svg" alt="">
+                                            <span>Submit</span>
+                                        </button>
+                                    </div>
+                                    <div class="search_attention">
+                                        <div class="search_attention_title">
+                                            <img src="./public/img/alert.svg" alt="">
+                                            <h3>Attention</h3>
+                                        </div>
+                                        <ul>
+                                            <li>Enquiry is only for the qualified lists after 2001.</li>
+                                            <li>If the information is incorrect, please contact Mrs. Yueh at +8862-2536-5455 ext. 115 for correction.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="./public/img/result.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
