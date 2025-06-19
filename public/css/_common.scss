@@ -291,20 +291,34 @@ main {
     }
     &_logo {
         width: 76px;
-        margin-right: 20px;
+        // margin-right: 20px;
     }
     &_copyright {
-        font-size: 17px;
+        font-size: 14px;
         color: $white;
         margin: 0;
     }
-    &_contact {
-        h2 {
+    &_title {
             color: $white;
             margin-bottom: 20px;
             font-size: 25px;
             font-weight: 700;
+    }
+    &_nav {
+        // width: calc((100% - 160px) / 3);
+        a {
+            font-size: 16px;
+            color: #fff;
         }
+    }
+    &_text {
+        width: 100%;
+        border-top: 1px solid rgba(255,255,255,0.5);
+        padding-top: 40px;
+        text-align: center;
+    }
+    &_contact {
+        // width: calc((100% - 160px - 76px) / 2);
         &_item {
             display: flex;
             align-items: flex-start;
@@ -323,9 +337,12 @@ main {
     }
     .container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
-        gap: 80px;
+        // gap: 80px;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        column-gap: 80px;
     }
     @media screen and (max-width: 991px) {
         .container {
